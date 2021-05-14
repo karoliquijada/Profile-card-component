@@ -1,0 +1,103 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;700&display=swap');
+
+:root {
+    --darkcyan: hsl(185, 75%, 39%);
+    --desaturatedblue: hsl(229, 23%, 23%); 
+    --grayishblue: hsl(227, 10%, 46%);
+    --darkgray: hsl(0, 0%, 59%);
+    --darkergray: hsl(0, 1%, 16%);
+}
+
+body {
+    background-color: var(--darkcyan);   
+    margin: 0;
+    width: 100%;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.card {   
+    width: 350px;  
+    border-radius: 15px;
+    box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.5);
+    background-color: white;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* --------------------------CARD HEADER--------------------------------- */
+
+.card-header {
+    background-image: url('images/bg-pattern-card.svg');  
+    background-size: cover;
+    height: 150px;
+
+}
+
+/* --------------------------CARD BODY--------------------------------- */
+
+.profile-img {  
+    width: 100px;
+    height: 100px;  
+    border-radius: 50%;
+    border: 7px solid white;
+    overflow: hidden;
+    margin-top: -45px;
+    margin-left: 35%;
+}
+
+.profile-img img {    
+    width: 100%;
+    height: auto;
+}
+
+/* --------------------------CARD INFO-------------------------------- */
+.fw {
+    font-weight: 700;
+    color: var(--darkergray);
+    font-size: 18px;
+}
+
+.fs {
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.name-age {
+   padding: 15px;
+}
+
+.location {
+    font-size: 12px;
+    color: var(--darkgray);
+    padding-bottom: 15px; 
+}
+
+
+.card-footer ul {
+    padding-inline-start: 0;
+    margin-left: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+hr {
+    opacity: 0.5;
+}
+
+.stats {
+    line-height: 1px;
+    color: var(--darkgray);
+}
+
+.attribution { font-size: 11px; text-align: center;}
+.attribution a { color: hsl(228, 45%, 44%); }
